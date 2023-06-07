@@ -1,0 +1,210 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+.navbar a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: inherit; /* Inherits the color from the parent element */
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    transition: box-shadow 0.3s ease; /* Adds a smooth transition effect */
+}
+.navbar button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect on hover */
+}
+
+.intropara {
+    flex: 1;
+}
+#photo{
+    float: right;
+    height:700px;
+    width:400px;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+  }
+.navbar{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style-type: none;
+    padding: 10px 10px
+}
+#Home{
+    height:740px;
+}
+#About{
+    height:740px;
+ 
+}
+#Contact_Me{
+    height:740px;
+    background-image: url('homeBackground.jpg');
+    background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#Social_Handles{
+    height:740px;
+  }
+.containerm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #202124;
+  margin-top: 0; /* Add this to remove the default margin */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3c4043;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f3f4;
+  color: #3c4043;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #1a73e8;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0d47a1;
+}
+#Contact_Me {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+#Contact_Me h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.containerm {
+  max-width: 600px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #333333;
+  overflow: hidden;
+  position: relative;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#About {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#About .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#About h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+#about-content {
+  font-size: 24px;
+  color: #555555;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+#Social_Handles {
+  background-image: url("original.jpg");
+}
+#Social_Handles h1{
+  color:whitesmoke
+}
+  
