@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #PREV {
+            position: relative;
+            background-color:black;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            
+
+
+        }
+
+        #PREV:after {
+            content: "";
+            background: #90EE90;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+
+        #PREV:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+
+        #Submit {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        #Submit:hover {
+            background-color: #3e8e41
+        }
+
+        #Submit:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .Nav {
+            padding: 2px;
+            margin-top: 0px;
+            overflow: hidden;
+
+            text-align: center;
+        }
+
+        .Nav button {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .Nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            width:30%;
+        }
+
+        .Nav button.import {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .Nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .Nav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        body {
+            background-image: url('contact.jpg');
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        #Intro {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #Instruction {
+            color: white;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 19px;
+        }
+
+        .input {
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+            color: black;
+        }
+
+        #remarks {
+            font-size: 20px;
+        }
+
+        #hi {
+            font-size: 30px;
+            color: #04AA6D;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="Nav">
+        <a href="project.html">Home</a>
+        <a href="achievements.html">Background</a>
+        <a class="active">Contact Me</a>
+        <br><br>
+        <p id="Intro">Hi, This page is created in case you want to contact me personally</p>
+        <p id="Instruction">So let me explain you the way this works<br>
+            I will ask for your email adress, name, country, remarks and then will contact you personally via mail</p>
+            <form action="https://formsubmit.co/tanushgoel2004@gmail.com" method="POST" class="input">
+
+                <p>Choose the way you would like to communicate :</p>
+            
+                  <input type="radio" id="Phone Number" name="moc" value="Phone Number">
+                  <label for="phone number">Email </label><br>
+                  <input type="radio" id="Email" name="moc" value="Email">
+                  <label for="Email">Phone Number</label><br>
+            
+                <p>Kindly fill your details if you would like to communicate :</p>
+                
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="Number">Phone Number:</label><br>
+                    <input type="text" id="Number" name="Number"><br>
+                    <label for="Email">Email:</label><br>
+                    <input type="Email" id="fname" name="Email"><br>
+                
+                <br><br><br>
+                <button type="submit" id="Submit">Submit</button>
+            </form>
+        <br><br>
+        <div class="wrapper"><a href="achievements.html"><button id="PREV">PREV</button></a></div>
+
+</body>
+
+
+</html>
