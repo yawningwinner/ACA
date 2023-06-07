@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Shriya Garg</title>
+
+    <style>
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: Black
+  
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    display: block;
+    color: #45A29E
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 20px;
+}
+
+h2 {
+    color: #66FCF1;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    color: #C5C6C7;
+    font-size: 30px;
+}
+b,label{
+    color: #7c7e80;
+}
+input[type=text], input[type=tel]{
+  width: 100%;
+  display: inline-block;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  font-size: 16px;
+  resize: none;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #29bfba;
+  color: whitesmoke;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size :25px;
+}
+
+input[type=submit]:hover {
+  background-color: #1c7e7a;
+}
+
+
+
+
+
+    </style>
+ </head>
+ <body style="background-color: #1F2833">
+
+    
+    <div class="sidenav">
+        <a href="#Intro">Introduction</a> |
+        <a href="#PI">Personal Information</a> |
+        <a href="#CI">Contact Information</a> |
+        <a href="#form">Contact me form</a>
+    </div>
+
+
+    <div class="main">
+    <section id="Intro">
+        <H2> Introduction</H2>
+        <p> Welcome to the the personal page of Shriya Garg. My contact details are mentions, kindly use the navigation bar to navigate through, and contact me via the form given</p>
+    </section>
+    <hr>
+
+    <section id="PI"> 
+        <h2>Personal Information</h2>
+        
+        <p> <b>Name:</b> Shriya Garg</p>
+        <p><b> DOB : </b>10-Aug-2004</p>
+        <p> <b>Institute:</b> IITK</p>
+        <p> <b>Course:</b> B.Tech CSE</p>
+        <p><b>HomeTown:</b> Jaipur</p>
+        <p><b>Blood Group:</b> B+</p>
+        
+    </section>
+    <hr>
+
+    <section id="CI">
+        <h2>Contact Info</h2>
+        <p>Here are my contact information</p>
+        <p><b> Mail address: </b>shriyag22@iitk.ac.in</p>
+        <p><b>Address: </b>Hall 4, Indian Institute of Technology, Kanpur</p>
+        <p><b>Phone No.:</b> 9351113330</p>
+    </section>
+    <hr>
+
+    <section id="form" >
+        <H2> Contact me form</H2>
+        <p>Please fill out this form to conatact me, it will send a mail to my mail address.</p>
+        <form action="action.php" method="post">
+            <label for="name"> Name: </label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email"> Email: </label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="phno"> Phone No.: </label><br>
+            <input type="tel" id="phno" name="PhoneNo"><br> 
+
+            <label for="message"> Please type your message: </label><br>
+            <textarea id="message" name="message" rows="10" cols="30">
+                </textarea>
+
+            <input type="submit" value="SUBMIT" id="submit">
+        </form>
+    </section>
+</div>
+ </body>
+ </html>
