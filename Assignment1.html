@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Personal Homepage</title>
+    <style>      
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      
+      .contact-form {
+        width: 350px;
+        margin: 0 auto;
+      }
+
+      .contact-form input[type="text"],
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" onclick="alert('Home')">Home</a>
+      <a href="#" onclick="alert('About')">About</a>
+      <a href="#" onclick="alert('Contact')">Contact</a>
+    </div>
+    <h1>Welcome to My Personal Homepage</h1>
+    <p>
+      Hello! My name is Sarthak Paswan. I am a first year undergrad student at
+      Indian Institute of Technology Kanpur. I am from Paradeep, Odisha and
+      my branch is CSE. The world of AI and software development have always 
+      facsinated me ever since my school days. My interest in academic lies
+      in Software development, Machine Learning and Finance.
+    </p>
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form
+        action="mailto:sarthakp22@iitk.ac.in"
+        method="POST"
+        enctype="text/plain"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+    <script>
+      const buttons = document.querySelectorAll(".navbar a");
+      buttons.forEach((button) => {
+        button.addEventListener("mouseover", () => {
+          button.style.transform = "scale(1.2)";
+          button.style.transition = "transform 0.3s";
+        });
+        button.addEventListener("mouseout", () => {
+          button.style.transform = "scale(1)";
+        });
+      });
+      const navbar = document.querySelector(".navbar");
+      navbar.addEventListener("mouseover", () => {
+        navbar.style.backgroundColor = "#555";
+      });
+      navbar.addEventListener("mouseout", () => {
+        navbar.style.backgroundColor = "#333";
+      });
+    </script>
+  </body>
+</html>
