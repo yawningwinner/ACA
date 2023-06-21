@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati's Webpage</title>
+    <style>
+        .navbar{
+            background-color:rgb(15, 15, 15);
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 15px 20px;
+            font-size: 20px;
+        }
+        .navbar li a{
+            padding-left: 50px;
+            text-decoration: none;
+            font-size: 30;
+            color:bisque;
+        }
+        .navbar li a:hover{
+            color:greenyellow;
+        }
+        img{
+            max-width: 23%;
+            max-height:10%;
+            float:left;
+            padding-top: 10px;
+            padding-left: 30px;
+            border-radius: 200px;
+        }
+        .text{
+            font-size: 18px;
+            padding-left: 20px;
+            padding-top: 20%;
+            float: left;
+            color:black;
+        }
+        input[type=text], input[type=tel],input[type=email]{
+            width: 20%;
+            display: inline-block;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin: 8px 0;
+            padding: 12px 20px;
+        }
+        textarea {
+            width: 20%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: whitesmoke;
+            font-size: 16px;
+            border-radius: 4px;
+            margin: 8px 0;
+            resize: none;
+        }
+            button[type=submit] {
+            width: 20%;
+            padding: 14px 20px;
+            box-sizing: border-box;
+            margin: 8px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size :25px;
+            }
+    
+            button[type=submit]:hover {
+            background-color:rgb(48, 155, 221);
+            }
+
+
+    </style>
+</head>
+<body style="background-color:antiquewhite;">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="ACA_assign1_home.html">Home</a></li>
+                <li><a href="ACA_assign1_about.html">About</a></li>
+                <li><a href="ACA_assign1_contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p style="color: rgb(6, 65, 30);font-size: larger;font-weight: bold; padding-left: 10px;">
+        Here are my contact details:
+        <p style="color: black; font-size: 20px; padding-left: 10px; ">Roll-NO: 220779</p>
+        
+        <p style="color: black; font-size: 20px; padding-left: 10px;">Email: apragati22@iitk.ac.in</p>
+
+        <p style="color: black; font-size: 20px; padding-left: 10px;">Address: Room F-310, Hall 4, IIT Kanpur</p> 
+        
+    </p>
+    <br>
+    <h1 style="color:blue;">
+        Contact Me Form:
+    </h1>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="mailto:example@abc.com" target="_blank">
+            <label for="Name" class="fcf-label">Name:</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" placeholder="Enter your name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Email address:</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" placeholder="Enter your email address" class="fcf-form-control" required>
+            </div>
+            <label for="Contact Number" class="fcf-label">Contact Number:</label>
+            <div class="fcf-input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Message:</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" size="30px" name="Message" class="fcf-form-control" placeholder="Enter your message here" rows="6" maxlength="5000" size="40px" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+</body>
+</html>
