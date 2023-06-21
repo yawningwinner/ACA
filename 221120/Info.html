@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment</title>
+        <style>
+            #navbar{
+  overflow:hidden;
+  font-size:20px;
+  background-color:black;
+  z-index: 2;
+  width:100vw;
+  height:50px;
+  position:fixed;
+}
+body{
+  margin:0px;
+  background-image: url("assets/legolas.jpg");
+  
+}
+#navbar a{
+  text-decoration:none;
+  color:white;
+  padding:15px;
+  text-align:center;
+  float:left;
+  
+}
+#navbar a:hover{
+  background-color:white;
+    color:black;
+  
+}
+#navbar a.active{
+  background-color:green;
+  color:black;
+}
+.info{
+    position:absolute;
+    top:80px;
+    padding: 20px 50px;
+    color:rgb(0, 0, 0);
+    border: 5px solid transparent;
+    background-color:aliceblue;
+    border-radius: 20px;
+}
+.info img{
+  margin-left: 600px;
+border-radius: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" >
+            <a href="Home.html" id='home' >Home</a>
+            <a href="Info.html" class="active" id='info'>Info</a>
+            <a href="form1.html" id='contact'>Contact</a>
+        </nav>
+        <div class="info">
+        <p style="text-decoration: underline;">DETAILS : </p>
+          <p>Name : T.Pawan Chanukya Reddy</p>
+          <p>Date of Birth : 5 March 2005</p>
+          <p>Address : <a href="https://www.google.com/maps/place/Nellore,+Andhra+Pradesh/@14.4290395,79.9395049,13z/data=!3m1!4b1!4m6!3m5!1s0x3a4c8cca0e958771:0xd3036c2025161f55!8m2!3d14.4425987!4d79.986456!16zL20vMDF0Y2Rr?entry=ttu">Nellore, Andhra Pradesh</a></p>
+          <p>Hobbies : Listening to music , Reading Novels</p>
+          <p>Schooling : Narayana Junior College</p>
+          <p>Favourite Books : Harry Potter Series</p>
+
+        </div>
+    </body>
+</html>
