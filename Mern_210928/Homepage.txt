@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+	<script src="https://kit.fontawesome.com/yourcode.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+		}
+		h1, h2 {
+			color: #333;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		h2 {
+			margin-top: 50px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			color: #666;
+			margin: 20px;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+		li {
+			margin: 0 10px;
+		}
+		a {
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.3s ease-in-out;
+		}
+		a:hover {
+			color: #ff4d4d;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 300px;
+			border-radius: 50%;
+			margin-top: 50px;
+			border: 5px solid #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		.fa-facebook, .fa-instagram {
+			font-size: 24px;
+			color: #333;
+			transition: all 0.3s ease-in-out;
+			margin-top: 20px;
+		}
+		.fa-facebook:hover, .fa-instagram:hover {
+			transform: scale(1.2);
+			color: #ff4d4d;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to my website!</h1>
+	<p>My name is Sanyam Jain, and I am a student at IIT Kanpur. I am currently studying Mathematics and Scientific Computing and will be graduating in 2025.</p>
+
+	<h2>About Me</h2>
+	<p>I am interested in puzzles. In my free time, I enjoy playing Badminton, Cricket, and other sports.</p>
+
+	<h2>Contact Me</h2>
+	<p>You can find me on:</p>
+	<ul>
+		<li><a href="https://www.facebook.com/profile.php?id=100075380134458"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="https://www.instagram.com/sanyam51150/"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+
+	<p>Feel free to email me at sanyamjain21@iitk.ac.in or call me at 94992-67166.</p>
+
+	<h2>Resume</h2>
+	<p>If you are interested in viewing my resume, you can download it <a href="https://drive.google.com/file/d/1Y514eNt3onnwcNE0W7MAzJFKzuB0isxX/view?usp=sharing">here</a>.</p>
+
+	<img src="AUV_Photo.jpeg" alt="My Photo">
+</body>
+</html>
+
+
+
+
