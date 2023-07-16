@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Prerna</title>
+    <link rel="stylesheet" href="contact_style.css">
+    <script>
+        function confirmSubmit() {
+            if (confirm("Are you sure you want to submit the form?")) {
+                document.getElementById("contact").submit();
+            } else {
+                return false;
+            }
+        }
+
+        function animateButton() {
+            var btn = document.getElementById("submitBtn");
+            btn.classList.add("animated", "bounce");
+            setTimeout(function() {
+                btn.classList.remove("animated", "bounce");
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hey there! Hope you are doing fine. If you want to contact me, please fill up this form. I will get back to you soon.</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form id="contact" action="">
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class="form-group">
+                <label for="college">Choose your college:</label>
+                <select id="college" name="college">
+                    <option value="IIT K" selected>IIT K</option>
+                    <option value="IIT M">IIT M</option>
+                    <option value="IIT B">IIT B</option>
+                    <option value="IIT Kgp">IIT Kgp</option>
+                    <option value="IIT R">IIT R</option>
+                    <option value="IIT BHU">IIT BHU</option>
+                </select>
+            </div>
+            <button type="button" id="submitBtn" class="btn" onclick="confirmSubmit(); animateButton();">Submit</button>
+        </form>
+    </div>  
+</body>
+</html>

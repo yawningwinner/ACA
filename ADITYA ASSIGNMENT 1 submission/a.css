@@ -1,0 +1,173 @@
+a {
+    text-decoration: none;
+    margin: 5px;
+}
+.all-things-box {
+    background-color: #9DB2BF;
+    padding: 20px;
+}
+
+body {
+    background-color: #D6E6F2;
+    text-align: center;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    margin: 0;
+}
+
+.bird-img {
+    position: absolute;
+    height: 50px;
+    margin: 200px 0px 0px 900px;
+}
+
+.cloud1-img {
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    margin: 138px 0px 0px 600px;
+}
+
+.cloud2-img {
+    position: absolute;
+    height: 120px;
+    width: 150px;
+    margin: 48px 0px 0px -139px;
+}
+
+.contact-links {
+    color: black;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-family: 'Teko', sans-serif;
+}
+
+.footer-list {
+    display: inline-block;
+    margin: 5px 5px 20px;
+}
+
+.footer {
+    background-color: #27374D;
+    padding: 10px 0px 50px;
+    color: rgb(30, 84, 163);
+    height: 500px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.handle-box{
+    margin: 10px;
+}
+
+#home-page-link{
+    float: left;
+    margin-left:40px;
+}
+
+hr {
+    border: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    height: 0;
+    width: 5%;
+    margin: 0px auto 20px;
+    border-color: grey;
+}
+
+html {
+    scroll-behavior: smooth;
+}    
+
+.intro-box {
+    margin-top: 30px;
+}
+
+.image-circle {
+    margin: 20px;
+    border-radius: 50%;
+    float: left;
+    background-color: #A6E3E9;
+    text-align: center;
+}    
+
+#right-nav-menu{
+    display: inline-block;
+    text-align: left;
+}
+
+.logos {
+    height: 30px;
+    width: 30 px;
+}    
+
+.mountain-img {
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    margin: -50px auto -113px;
+    text-align: center;
+}   
+
+
+.myButton:active {
+	position:relative;
+	top:1px;
+} 
+
+.name {
+    font-family: 'Cherry Bomb One', cursive;
+    color: #247683;
+    font-size: 4rem;
+}    
+
+.nav-list {
+    display: inline-block;
+    margin: 0 20px;
+}    
+
+.profile-img {
+    background-color: #27374D;
+    border-radius: 100%;
+    height: 150px;
+    margin-top: 30px;
+    padding: 40px;
+}    
+
+.things-img {
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    float: left;
+}    
+
+.nav-bar {
+    box-sizing: border-box;
+    background-color: #247683;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: right;
+}
+
+.things-content {
+    text-align: left;
+    margin-right: auto;
+}
+
+.things-title {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.things-box {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+}
+
+ul {
+    margin: auto;
+    padding: 0;
+}

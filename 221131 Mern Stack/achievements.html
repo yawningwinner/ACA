@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<style>
+            .Nav {
+            padding: 2px;
+            margin-top: 0px;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .Nav button {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .Nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            width:30%;
+        }
+
+        .Nav button.import {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .Nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .Nav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+    body {
+        background-image: url('wallpaper.jpg');
+        background-size: cover;
+    }
+
+    .Background {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        opacity: 1;
+        color: white;
+    }
+
+    table,
+    td {
+        border: 5px solid white;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    th {
+        border: 1px solid white;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .Hello {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    button {
+        margin-left: 350px;
+    }
+
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: blue;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000
+    }
+
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+</style>
+
+<head>
+
+</head>
+
+<body>
+    <div class="Nav">
+        <a href="project.html">Home</a>
+        <a class="active">Background</a>
+        <a href="forms_copy.html">Contact Me</a>
+    </div>
+    <p class="Background ">The following table highlights my background.</p>
+    <table style="width: 100%;">
+        <tr>
+            <th>S.no</th>
+            <th>Information</th>
+            <th>Verdict</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CBSE Class X</td>
+            <td>Passed From Amity International School Noida <br> Percentage:98.2%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CBSE Class XII</td>
+            <td>Passed from Amity International School Mayur Vihar<br>Percentage: 96.8%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JEE Mains</td>
+            <td>AIR:94<br>best percentile:99.994</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>VITEEE</td>
+            <td>AIR 1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Olympiads</td>
+            <td>Qualified stage 1 IOQP and stage 1 and 2 IOQC in national top 1%</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>KVPY</td>
+            <td>SA: not qualified <br> SX: AIR 680</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>JEE Advanced</td>
+            <td>AIR 205</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Institute and course</td>
+            <td> Institute: Indian Institute of Technology, Kanpur<br> Course: Btech(2022-2026) in Computer Science and
+                Engineering</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Hobbies</td>
+            <td>1.Playing Badminton<br>2.Playing Chess<br>3. Watching Web series</td>
+        </tr>
+        <tr class="Hello">
+            <td>10</td>
+            <td>Fav Web Series(non-anime)</td>
+            <td>1. Game of Thrones<br>2. Breaking Bad<br>3. Narcos and Narcos Mexico<br>4. Ozark<br>5. The witcher <br>
+                6. Peaky Blinders</td>
+        </tr>
+
+    </table>
+
+
+    <a href="project.html"><button class="glow-on-hover" type="button">PREV</button></a>
+    <a href="forms_copy.html"><button type="button" class="glow-on-hover">NEXT</button></a>
+</body>
+
+</html>

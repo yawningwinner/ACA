@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+
+        <!-- Navigation List -->
+        <div class="container-fluid">
+
+            <ul class="m-3 nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="search.html">Search</a>
+                </li>
+                <li class="ms-auto nav-item">
+                    <a class="nav-link text-dark" href="navigator.html">Know Your Co-ordinates</a>
+                </li>
+                <li class="ms-auto nav-item">
+                    <a class="nav-link text-dark" href="fun.html">Fun</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="https://google.com/imghp"></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact Me
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="https://github.com/mridul-g"><i class="bi bi-github"></i>   GitHub</a>
+                       </li>
+                      <li>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/mridulgupta-iitk/"><i class="bi bi-linkedin"></i>  LinkedIn</a>
+                    </li>
+                      <li>
+                        <a class="dropdown-item" href="https://instagram.com/mridul_007_"><i class="bi bi-instagram"></i>  Instagram</a>
+                    </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Display the co-ordinates-->
+        <div class="text-center container-fluid m-3">
+            <table class="table table-borderless">
+                <thead class="large">
+                    <tr>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="pos.lat"></td>
+                        <td id="pos.lon"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Create a button to search the co-ordinates on google maps-->
+            <a id="msearch" autofocus autocomplete="off" class="btn btn-light mx-auto" role="button">Search your Co-ordinates</a>
+
+        </div>
+
+
+
+
+        <!-- Javascript code to shows to co-ordinates and search them on google maps-->
+        <script>
+
+            var lat = document.getElementById('pos.lat');
+            var long = document.getElementById('pos.lon');
+            var link = document.getElementById('msearch');
+            navigator.geolocation.getCurrentPosition(function(position){
+
+                lat.innerHTML = position.coords.latitude;
+                long.innerHTML = position.coords.longitude;
+                link.href = "https://www.google.com/maps/search/" + lat.innerHTML + ",+" + long.innerHTML;
+            });
+
+        </script>
+
+        <!--Bottom footnote-->
+        <div class="medium fixed-bottom">
+            <ul class="m-3 nav">
+                <li class="nav-item">
+                    All rights reserved.
+                </li>
+                <li class="ms-auto nav-item">
+                    &#169; Copyright
+                </li>
+        </div>
+
+    </body>
+</html>

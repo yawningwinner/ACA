@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project</title>
+    <style>
+        button.Next{
+            border-radius: 4px;
+            background-color: red;
+            border: none;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            margin-left:650px;
+        }
+
+        .Next span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .Next span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .Next:hover span {
+            padding-right: 25px;
+        }
+
+        .Next:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .photo {
+            opacity: 0.1;
+        }
+
+        body {
+            color: white;
+            background-image: url('hello.jpg');
+            background-size: cover;
+            opacity: 0.1px;
+        }
+        #Name1 {
+            color: black;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px;
+            margin-bottom: 40px;
+
+        }
+
+        #Name {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            margin-bottom:5px;
+        }
+
+        .Next {
+            margin-top: 100px;
+            color: white;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 730px;
+            border-radius: 10px;
+        }
+
+        .Bullets {
+            color: White;
+            text-align: center;
+            list-style-position: inside;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 300px;
+        }
+
+        .Nav {
+            padding: 2px;
+            margin-top: 0px;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .Nav button {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .Nav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            width:30%;
+        }
+
+        .Nav button.import {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .Nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .Nav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Nav">
+        <a class="active">Home</a>
+        <a href="achievements.html">Background</a>
+        <a href="forms_copy.html">Contact Me</a>
+    </div>
+    
+    <p id="Name">HI, this is <br>Tanush Goel</p>
+    <p id="Name1">Roll No. #221131<br><br>I am a Y22 student from the computer science department. <br>I have divided this project in 3 parts:
+    </p>
+    <br>
+    <ul class="Bullets">
+        <li>This page: Introduction</li>
+        <li>My background</li>
+        <li>Contact Me</li>
+    </ul>
+    <a href="achievements.html" ><button class="Next"><span>NEXT </span></button></a>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment</title>
+        <!-- <script>
+          document.addEventListener('DOMContentLoaded',(event)=>{
+const navbarlinks= document.querySelectorAll("#navbar a");
+  navbarlinks.forEach(link=>{
+    link.addEventListener('click', ()=>{
+      navbarlinks.forEach(link=>{
+        link.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
+});
+        </script> -->
+        <style>
+            /* #navbar{
+  background-color:#e9e9e9;
+  padding: 10px;
+}
+body{
+  margin:0px;
+  margin-top: 10px;
+}
+#navbar ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+#navbar li{
+  margin: 0 5px;
+}
+#navbar a{
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #fff;
+  border-radius: 20px; 
+  text-decoration: none;
+  color: #333;
+} */
+#navbar{
+  overflow:hidden;
+  font-size:20px;
+  background-color:black;
+  
+  width:100vw;
+  height:50px;
+  position:fixed;
+}
+body{
+  margin:0px;
+  background-color: rgb(238, 238, 226);
+}
+#navbar a{
+  text-decoration:none;
+  color:white;
+  padding:15px;
+  text-align:center;
+  float:left;
+  
+}
+
+#navbar a:hover{
+  background-color:white;
+    color:black;
+  
+}
+#navbar a.active{
+  background-color:green;
+  color:black;
+}
+.intro{
+  position:absolute;
+  margin-top: 80px;
+}
+.quote
+{
+  font-size: larger;
+
+  border: 2px solid transparent;
+  background-color: wheat;
+  padding: 50px;
+  margin-top:40px;
+  text-align: center;
+  margin-left: 120px;
+}
+.about{
+  font-size: large;
+  
+}
+        </style>
+    </head>
+    <body>
+      <nav id="navbar">
+          <a href="Home.html" id='home' class="active">Home</a>
+          <a href="Info.html" id='info'>Info</a>
+          <a href="form1.html" id='contact'>Contact</a>
+      </nav>
+        <div class="intro">
+          <h1 style="text-align: center; text-decoration: underline; margin-left: 100px;">Welcome to my Home Page</h1>
+          <div class="about">
+          <p>I am Pawan Chanukya and I am a IITK Y22 UG Student !<br><br> I love programming and building interactive web pages.<br><br> If you wanna know more about me donot forget to see my info page</p>
+          <p>If you want to contact me fill the form in the contact section above!</p>
+        </div>
+          <p class="quote">You run and run, mile after mile, and you never
+            quite know why.<br> You tell yourself that you’re running toward some goal,
+            chasing some rush, but really you run because the alternative, stopping,
+            scares you to death.</p>
+            <p style="text-align: end; font-size: large;">....Phillip Hampson Knight</p>
+        </div>
+    </body>
+</html>
